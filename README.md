@@ -18,7 +18,9 @@
 - Git
 - IntelliJ IDEA（或任何支援 Java 開發的 IDE）
 
+
 ### 安裝步驟
+
 
 1. 克隆此專案：
 git clone https://github.com/zilxhasu/ExchangeRateManager_CLI.git
