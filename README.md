@@ -29,7 +29,7 @@ cd ExchangeRateManager_CLI
 
 你可以直接在 IDE 中直接運行專案。
 
-執行程式：
+3.執行程式：
 java -jar ExchangeRateManager_CLI.jar
 或是
 你可以直接在 IDE 中直接運行專案。
