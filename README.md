@@ -21,7 +21,6 @@
 
 ### 安裝步驟
 
-
 1. 克隆此專案：
 git clone https://github.com/zilxhasu/ExchangeRateManager_CLI.git
 
