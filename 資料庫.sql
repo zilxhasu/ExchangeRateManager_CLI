@@ -12,29 +12,6 @@ CREATE TABLE ExchangeRate (
     rateAUD DECIMAL(10, 6) NOT NULL,                   -- 匯率 8
     );
 
-DELETE from exchangerate --刪除資料
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- 刪除 CurrencyPair 表格
-DROP TABLE exchangerate;
-
--- 刪除 Currency 表格
-DROP TABLE Currency;
-
-
-
 CREATE TABLE CurrencyPair (
     pair_id INT IDENTITY(1,1) PRIMARY KEY,         -- 自動增長的主鍵
     base_currency_id INT NOT NULL,                  -- 基本貨幣的 `currency_id`
@@ -143,3 +120,14 @@ INSERT INTO CurrencyPair (base_currency_id, target_currency_id)
 SELECT 
     (SELECT currency_id FROM Currency WHERE currency_code = 'USD'),
     (SELECT currency_id FROM Currency WHERE currency_code = 'AUD');
+
+
+--刪除資料
+DELETE from exchangerate 
+
+-- 刪除 CurrencyPair 表格
+DROP TABLE exchangerate;
+
+-- 刪除 Currency 表格
+DROP TABLE Currency;
+
